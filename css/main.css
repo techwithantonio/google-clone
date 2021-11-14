@@ -14,11 +14,19 @@ body {
     font-size: 1.6rem;
 }
 
+/* Styles for hyperlinks */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /* Header and navigation bar  */
 header {
     border: 2px solid gray;
     display: flex;
     justify-content: flex-end;
+    background-color: lightgray;
 }
 header nav {
     border: 2px solid blue;
@@ -28,14 +36,18 @@ header .nav-right-section {
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    margin: 10px auto;
 }
+header .nav-right-section a {
+    margin-right: 10px;
+}
+
 
 /* Main area, search bar and buttons  */
 main {
     border: 2px solid red;
     text-align: center;
-    grid-column: flex;
-    padding-bottom: auto;
+    height: auto;
 }
 main .main-logo {
     border: 2px solid green;
@@ -51,14 +63,47 @@ main .main-logo img {
     padding-left: 50px;
     padding-right: 50px;
 }
-main .main-input {
-    border: 2px solid lightblue;
+main .main-input-container {
+    border: 1px solid rgb(112, 128, 133);
+    display: flex;
+    max-width: 600px;
+    justify-content: center;
+    margin: 10px auto;
+    align-items: center;
+    border-radius: 20px;
+}
+main .main-input-container input {
+    height: 25px;
+    width: 90%;
+    border: none;
+    outline: none;
+}
+main .main-input-container .main-input-search-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+main .main-input-container a {
+    background-image: url('https://www.pinpng.com/pngs/m/39-399775_google-voice-assistant-icon-hd-png-download.png');
+    background-size: contain;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    
 }
 main .main-buttons {
     border: 2px solid orange;
 }
 main .main-empty-space {
     border: 2px solid cyan;
+    height: 100px;
 }
 
 /* Footer */
@@ -68,6 +113,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    background-color: lightgray;
 }
 footer .footer-left {
     border: 2px solid lightgreen;
@@ -75,6 +121,7 @@ footer .footer-left {
     justify-content: flex-start;
     width: 50%;
     list-style: none;
+    margin: 10px auto;
 }
 footer .footer-right {
     border: 2px solid purple;
@@ -82,4 +129,11 @@ footer .footer-right {
     justify-content: flex-end;
     width: 50%;
     list-style: none;
+    margin: 10px auto;
+}
+footer .footer-left a {
+    margin-left: 10px;
+}
+footer .footer-right a {
+    margin-right: 10px;
 }
