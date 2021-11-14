@@ -1,9 +1,85 @@
+/* Sets default values  */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/* This set 1rem to 10pxs */
 html {
     font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* This sets each 1rem to 10px */
+body {
+    font-size: 1.6rem;
+}
+
+/* Header and navigation bar  */
+header {
+    border: 2px solid gray;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav {
+    border: 2px solid blue;
+    width: 50%;
+}
+header .nav-right-section {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Main area, search bar and buttons  */
+main {
+    border: 2px solid red;
+    text-align: center;
+    grid-column: flex;
+    padding-bottom: auto;
+}
+main .main-logo {
+    border: 2px solid green;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+main .main-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+main .main-input {
+    border: 2px solid lightblue;
+}
+main .main-buttons {
+    border: 2px solid orange;
+}
+main .main-empty-space {
+    border: 2px solid cyan;
+}
+
+/* Footer */
+footer {
+    border: 2px solid gray;
+    display: flex; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer .footer-left {
+    border: 2px solid lightgreen;
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    list-style: none;
+}
+footer .footer-right {
+    border: 2px solid purple;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    list-style: none;
 }
