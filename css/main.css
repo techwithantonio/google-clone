@@ -23,13 +23,14 @@ a {
 
 /* Header and navigation bar  */
 header {
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
     display: flex;
     justify-content: flex-end;
     background-color: lightgray;
+    border-bottom: 1px solid gray;
 }
 header nav {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 50%;
 }
 header .nav-right-section {
@@ -45,12 +46,12 @@ header .nav-right-section a {
 
 /* Main area, search bar and buttons  */
 main {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-align: center;
     height: auto;
 }
 main .main-logo {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 0 auto;
     width: 100%;
     padding-top: 50px;
@@ -64,7 +65,7 @@ main .main-logo img {
     padding-right: 50px;
 }
 main .main-input-container {
-    border: 1px solid rgb(112, 128, 133);
+    border: 2px solid #f2f2f2;
     display: flex;
     max-width: 600px;
     justify-content: center;
@@ -99,16 +100,32 @@ main .main-input-container a {
     
 }
 main .main-buttons {
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-buttons div button {
+    background-color: #f2f2f2;
+    height: 30px;
+    width: auto;
+    font-size: 1.4rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none; 
+    border-radius: 5px;
+    margin: 0px 5px;
 }
 main .main-empty-space {
-    border: 2px solid cyan;
+    /* border: 2px solid cyan; */
     height: 100px;
 }
 
 /* Footer */
 footer {
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
+    border-top: 1px solid gray;
     display: flex; 
     position: absolute;
     bottom: 0;
@@ -116,7 +133,7 @@ footer {
     background-color: lightgray;
 }
 footer .footer-left {
-    border: 2px solid lightgreen;
+    /* border: 2px solid lightgreen; */
     display: flex;
     justify-content: flex-start;
     width: 50%;
@@ -124,7 +141,7 @@ footer .footer-left {
     margin: 10px auto;
 }
 footer .footer-right {
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     display: flex;
     justify-content: flex-end;
     width: 50%;
