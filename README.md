@@ -1,3 +1,3 @@
 # google-clone
 
-Recreating Google.com search page using HTML and CSS only.
+Recreated Google.com search page using HTML and CSS only.
